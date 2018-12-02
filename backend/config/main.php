@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',//应用id，必须唯一
+    'name' => '开源积分墙系统',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',//控制器命名空间
     'language' => 'zh-CN',//默认语言
@@ -23,7 +24,7 @@ return [
             'returnUrlParam' => '_backend_returnUrl',
         ],
         'session' => [
-//            'name' => 'BACKEND_FEEHICMS', // swoole 扩展模块不支持setName方法
+            'name' => 'BACKEND_FEEHICMS', //todo swoole 扩展模块不支持setName方法
             'timeout' => 1440,//session过期时间，单位为秒
         ],
         'log' => [//此项具体详细配置，请访问http://wiki.feehi.com/index.php?title=Yii2_log

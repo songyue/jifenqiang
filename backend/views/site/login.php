@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div>
                 <h1 class="logo-name">H+</h1>
             </div>
-            <h3><?= Yii::t('app', 'Welcome to') ?> Feehi CMS</h3>
+            <h3><?= Yii::t('app', 'Welcome to') ?> <?=Yii::$app->name?></h3>
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
             <?= $form->field($model, 'username', ['template' => "<div style='position:relative'>{input}\n{error}\n{hint}</div>"])
                 ->textInput(['autofocus' => true, 'placeholder' => Yii::t("app", "Username")]) ?>
