@@ -84,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => 'btn btn-primary block full-width m-b',
                 'name' => 'login-button'
             ]) ?>
-
+<?php /** ?>
             <p class="text-muted text-center">
                 <a href="<?= Url::to(['admin-user/request-password-reset']) ?>">
                     <small><?= Yii::t('app', 'Forgot password') ?></small>
@@ -97,6 +97,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
                 ?>
             </p>
+
+<?php */ ?>
 
             <?php ActiveForm::end(); ?>
         </div>
